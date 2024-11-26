@@ -1,0 +1,41 @@
+
+.custom-form .nice-select {
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #757575;
+  padding-left: 12px;
+  color: #111;
+}
+.custom-form {
+  width: 80%;
+}
+.custom-form .form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.custom-form .form-item label {
+  color: #222;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.custom-form .form-item input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #757575;
+  color: #111;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+.custom-form .form-item input::placeholder {
+  color: #9e9e9e;
+}

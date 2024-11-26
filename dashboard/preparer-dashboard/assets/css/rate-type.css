@@ -1,0 +1,389 @@
+:root {
+    --primary-bg: linear-gradient(135deg, #09bd3f 0%, #09812d 100%);
+    --primary: #6b6b6b;
+    --black: #111;
+    --white: #fff;
+    --base-transition: all 0.3s ease-in-out;
+  }
+  
+  .tax-preparer-information {
+    display: flex;
+    padding: 20px 20px;
+    gap: 20px;
+    min-height: 90vh;
+  }
+  
+  .tax-preparer-information .left {
+    width: 40%;
+    display: none;
+  }
+  .tax-preparer-information .left img {
+    width: 100%;
+  }
+  .tax-preparer-information .step-form-container {
+    width: 100%;
+  }
+  
+  .tax-preparer-information .nice-select {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #757575;
+    padding-left: 12px;
+    color: #111;
+  }
+  .custom-form {
+    width: 100%;
+  }
+  .custom-form .form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .custom-form .form-item label {
+    color: #222;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .custom-form .form-item input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #757575;
+    color: #111;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+  }
+  .custom-form .form-item input::placeholder {
+    color: #9e9e9e;
+  }
+  
+  .upload-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    height: 200px;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b6b6b;
+  }
+  
+  .uploaded-files-list {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .uploaded-file {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    gap: 16px;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 14px;
+    color: #111;
+  }
+  
+  .close-btn {
+    background: #ccc;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .step-count {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: -0.32px;
+  }
+  .step-count span {
+    color: #09bd3f;
+  }
+  .step-title {
+    color: #222;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 132%;
+    letter-spacing: -0.72px;
+    margin-bottom: 20px;
+  }
+  .form-progress {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .progress-container {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .progress-container .progress-bar {
+    width: 283px;
+    height: 5px;
+    border-radius: 100px;
+    background: #e6f2ea;
+    position: relative;
+  }
+  .progress-container .progress-completed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 100px;
+    background: linear-gradient(135deg, #09bd3f 0%, #09812d 100%);
+  }
+  .progress-container .count {
+    color: #222;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+  }
+  .form-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .form-actions a,
+  .form-actions button {
+    cursor: pointer;
+    display: flex;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  .form-actions button {
+    border: none;
+    outline: none;
+  }
+  .form-actions .prev-btn {
+    border-radius: 4px;
+    border: 1px solid #09bd3f;
+    color: #09bd3f;
+  }
+  .form-actions .next-btn {
+    background: linear-gradient(135deg, #09bd3f 0%, #09812d 100%);
+    color: #fff;
+  }
+  
+  #step-2 {
+    display: none;
+  }
+  #step-3 {
+    display: none;
+  }
+  
+  .rate-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .rate-container .rate-box {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: 1.5px solid #e9e9e9;
+    background: #fff;
+    cursor: pointer;
+  }
+  .rate-container .rate-title {
+    color: #393939;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top: 40px;
+  }
+  .rate-box .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .rate-box .bullet-point {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #999;
+  }
+  .active-rate-box .bullet-point {
+    border-color: #09bd3f;
+    background: linear-gradient(135deg, #09bd3f 0%, #09812d 100%);
+  }
+  .active-rate-box {
+    border-color: #09bd3f !important;
+    box-shadow: 0px 12px 16px 0px rgba(34, 34, 34, 0.25);
+  }
+  
+  .price-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .price-box {
+    border-radius: 10px;
+    background: #e9e9e9;
+    padding: 12px 14px;
+    font-size: 18px;
+    color: #222;
+    width: 250px;
+  }
+  .price-box input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 8px;
+    width: 160px;
+  }
+  .price-box input[type="number"]::-webkit-outer-spin-button,
+  .price-box input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Hide increment and decrement arrows in number inputs for Firefox */
+  .price-box input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  .price-container label {
+    color: #222;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 24px */
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  @media only screen and (min-width: 650px) {
+    .rate-container {
+        width: 70%;
+    }
+  }
+  @media only screen and (min-width: 769px) {
+    .rate-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+    }
+    .rate-container .rate-box {
+      width: 50%;
+      padding: 26px 28px;
+      border-radius: 10px;
+      border: 1.5px solid #e9e9e9;
+      background: #fff;
+      cursor: pointer;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    .tax-preparer-information .step-form-container {
+      width: 60%;
+    }
+    .tax-preparer-information .left {
+      display: block;
+    }
+  }
+  @media only screen and (min-width: 1300px) {
+    .rate-container {
+        width: 70%;
+    }
+    .price-box {
+      border-radius: 10px;
+      background: #e9e9e9;
+      padding: 17px 18px;
+      font-size: 18px;
+      color: #222;
+      width: 250px;
+    }
+    .price-container {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .price-container label {
+      color: #222;
+      font-family: Poppins;
+      font-size: 20px;
+    }
+    .rate-container .rate-title {
+      color: #393939;
+      font-family: Poppins;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      margin-top: 40px;
+    }
+    .step-title {
+      color: #222;
+      font-family: Poppins;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 132%;
+      letter-spacing: -0.72px;
+      margin-bottom: 60px;
+    }
+    .tax-preparer-information {
+      display: flex;
+      padding: 40px 40px;
+      gap: 40px;
+      min-height: 90vh;
+    }
+  }
+  @media only screen and (min-width: 1900px) {
+    .rate-container {
+        width: 60%;
+    }
+    .tax-preparer-information {
+      display: flex;
+      padding: 100px 300px;
+      gap: 80px;
+      min-height: 90vh;
+    }
+  }
+  

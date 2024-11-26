@@ -1,0 +1,412 @@
+:root {
+  --primary-bg: linear-gradient(135deg, #09bd3f 0%, #09812d 100%);
+  --primary: #6b6b6b;
+  --black: #111;
+  --white: #fff;
+  --base-transition: all 0.3s ease-in-out;
+}
+
+.upload-area {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  height: 200px;
+  width: 360px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b6b6b;
+}
+
+.uploaded-files-list {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.uploaded-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+  color: #111;
+}
+
+.close-btn {
+  background: #ccc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* step design */
+.profile-custom-form {
+  width: 100% !important;
+}
+.profile-custom-form .rate-container {
+  width: 100%;
+}
+.form-step-progress {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.form-step-progress .progress-title {
+  color: #6b6b6b;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
+
+.form-step-progress .active-progress-title {
+  color: #09bd3f !important;
+}
+.form-step-progress .progress-arrow svg {
+  fill: #6b6b6b;
+}
+.form-step-progress .active-progress-arrow svg {
+  fill: #09bd3f;
+}
+.step-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+.step-form-actions .prev-btn,
+.step-form-actions .next-btn {
+  border-radius: 4px;
+  border: 1px solid #09bd3f;
+  background-color: #fff;
+  padding: 8px 20px;
+  color: #09bd3f;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  cursor: pointer;
+}
+.step-form-actions .next-btn {
+  color: #fff;
+  background-color: #09bd3f;
+}
+#form-step-2,
+#form-step-3 {
+  display: none;
+}
+
+/* upload user profile photo */
+.upload-profile-photo-container {
+  border-radius: 10px;
+  border: 2px dashed #ccc;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  max-width: 363px;
+  padding: 20px;
+  cursor: pointer;
+}
+.uploaded-profile-photo {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.uploaded-profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.profile-photo-cross-btn {
+  position: absolute;
+  z-index: 100 !important;
+  border: none;
+  outline: none;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  background-color: #09812d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+}
+
+/* upload service photo */
+.service-upload-profile-photo-container {
+  border-radius: 10px;
+  border: 2px dashed #ccc;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  max-width: 363px;
+  padding: 20px;
+  cursor: pointer;
+}
+.service-uploaded-profile-photo {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.service-uploaded-profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.service-profile-photo-cross-btn {
+  position: absolute;
+  z-index: 100 !important;
+  border: none;
+  outline: none;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  background-color: #09812d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+}
+
+/* service categories */
+.service-categories-btn {
+  cursor: pointer;
+  color: #222;
+  font-family: Poppins;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+}
+.service-categories {
+  position: relative;
+}
+.service-categories-modal {
+  position: absolute;
+  left: 0;
+  border-radius: 8px;
+  border: 1px solid #e9e9e9;
+  background: #fff;
+  box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.1),
+    0px 10px 10px 0px rgba(0, 0, 0, 0.04);
+
+  display: flex;
+  width: 262px;
+  max-height: 269px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  overflow-y: auto;
+
+  top: 90px;
+  transition: top 0.5s ease, opacity 0.3s ease, visibility 0.5s ease;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+.service-categories-modal.open {
+  top: 60px;
+  opacity: 1;
+  z-index: 10;
+  visibility: visible;
+}
+.service-categories-modal .item {
+  color: #111;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.service-categories-modal .item.active {
+  color: #09bd3f;
+}
+.service-categories-modal .item:not(:last-child) {
+  border-bottom: 1px solid #bababa;
+  display: flex;
+  width: 100%;
+  padding: 4px 0 8px 0;
+}
+.service-categories-modal .item:hover {
+  color: #09bd3f;
+}
+.service-categories-selected-items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+.service-categories-selected-items .selected-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  border-radius: 2px;
+  background: #e9e9e9;
+}
+.service-categories-selected-items .selected-item .remove-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #09bd3f; */
+  color: #111;
+  cursor: pointer;
+  margin-top: 2px;
+  font-size: 20px;
+}
+
+.availability-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.availability-container .item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+.availability-container .item .left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100px;
+  color: #222;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 24px */
+}
+.availability-container .item .right .available-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.availability-container input[type="checkbox"] {
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: -1px;
+}
+.availability-container input[type="checkbox"]:not(:checked) {
+  border: 1px solid #6b6b6b !important;
+}
+input[type="checkbox"]:checked {
+  background-color: #09bd3f;
+  border-color: #09bd3f;
+  outline: none;
+}
+input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #09bd3f;
+}
+.availability-container .nice-select {
+  min-width: 100px;
+  font-weight: 500;
+}
+.form-item-checkbox-title {
+  color: #222;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+}
+
+@media screen and (min-width: 1300px){
+    .availability-container .item .right .available-content {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+    .availability-container .item {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+    .availability-container .item .left {
+        font-size: 20px;
+    }
+    .form-item-checkbox-title {
+        color: #222;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 36px */
+      }
+    .service-categories-btn {
+        cursor: pointer;
+        color: #222;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 36px */
+      }
+    .form-step-progress {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+      }
+    .form-step-progress .progress-title {
+        color: #6b6b6b;
+        font-family: Poppins;
+        font-size: 18px;
+    }
+    .form-step-progress .progress-title svg {
+        width: 10px;
+        height: 16px;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    .profile-custom-form {
+        width: 70% !important;
+    }
+}

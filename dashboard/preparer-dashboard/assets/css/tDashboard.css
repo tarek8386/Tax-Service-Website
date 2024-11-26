@@ -1,0 +1,443 @@
+/*==== Google Fonts(Inter || Lora || Poppins || pt-sans ) :: Start ====*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*==== Google Fonts(Inter || Lora || Poppins ) :: End ====*/
+
+/*==== Default Style :: Start ====*/
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-bg: linear-gradient(135deg, #09bd3f 0%, #09812d 100%);
+    --primary: #6b6b6b;
+    --black: #111;
+    --white: #fff;
+    --base-transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--white);
+    color: var(--heading-color);
+    overflow-x: hidden;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.common-btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: 1px solid #09bd3f;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    background: var(--primary-bg);
+    color: var(--white);
+    min-width: 100px;
+    text-align: center;
+    transition: var(--base-transition);
+}
+
+
+/* dashboard main */
+.tm-dashboard-home{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.tm-dashboard-banner {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tm-dashboard-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--primary-bg);
+    opacity: 0.1;
+    z-index: 0;
+}
+.tm-dashboard-banner-content-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 20px 32px;
+}
+
+.tm-dashboard-banner-content-wrapper h1 {
+    color: var(--black);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 54px;
+
+}
+
+.tm-dashboard-banner-content-wrapper p {
+    color: #67696F;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.start-searching-btn {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border-radius: 8px;
+    padding: 16px 60px;
+    background: var(--primary-bg);
+    margin-top: 10px;
+}
+/* banner section end */
+
+/* upcoming appointment start */
+.tax-professionals-section .categories-tax-card-wrapper,
+.upcoming-apointment-section .categories-tax-card-wrapper {
+    margin-top: 30px;
+}
+.tm-dashboard-heading{
+    color:#222;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 54px;
+}
+.upcoming-apointments-user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.upcoming-apointments-user-img-name{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.upcoming-apointments-user-img{
+    width: 50.108px;
+height: 50.691px;
+}
+.upcoming-apointments-user-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.upcoming-apointments-user-name-city{
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+   align-items: flex-start;
+}
+.upcoming-apointments-user-name-city h5{
+    color: #252C32;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26.24px;
+}
+.upcoming-apointments-user-name-city p{
+    color:  #6B7280;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.68px;
+}
+.upcoming-apointments-user-link{
+text-align: right;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 19.68px;
+text-decoration-line: underline;
+background: var(--primary-bg);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+position: relative;
+margin-right: 30px;
+}
+.upcoming-apointments-user-link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 1px;
+    background: var(--primary-bg);
+    z-index: 1;
+}
+.upcoming-apointment-devider{
+    background-color: #E9E9E9;
+    height: 1px;
+    width: 95%;
+}
+.explore-tax-single-card:hover .check-availability-bookmarks a {
+    background-color: inherit;
+    color: rgb(8, 153, 52);
+}
+
+.booking-back-btn {
+    display: inline-flex;
+    align-items: center; 
+    padding: 8px 12px;
+    background-color: #f3f3f3;
+    border-radius: 5px; 
+    color: #08a838;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    width: auto;
+    margin-right: auto;
+}
+
+.booking-back-btn svg {
+    margin-right: 5px; 
+    flex-shrink: 0;
+}
+
+.booking-back-btn span {
+    display: inline-flex;
+    align-items: center;
+}
+
+.booking-back-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.tax-profile-dashboard-btn-wrapper{
+    border-radius: 16px;
+background: #F8F8F8;
+padding: 24px 38px;
+}
+.appointment-cancel-btn{
+    border: none;
+    color: #4E4E4E;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:  26.24px;
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: 100%;
+    cursor: pointer;
+}
+.dashboard-tax-profile-right-user{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+background: #E6F2EA;
+padding: 16px;
+}
+.dashboard-tax-profile-section {
+    padding: 0px;
+}
+.dashboard-tax-profile-section .tax-profile-right{
+    gap: 40px;
+}
+.dashboard-tax-profile-date-btn{
+    padding: 40px;
+    border-radius: 16px;
+background: #F8F8F8;
+display: flex;
+flex-direction: column;
+gap: 24px;
+margin-bottom: 40px;
+}
+.dashboard-tax-profile-date-btn-text h4{
+color: #1D1B20;
+font-family:'Roboto';
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height:  40px;
+margin-bottom: 8px;
+}
+.dashboard-tax-profile-date-btn-text h5{
+    color: #4E4E4E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+}
+.dashboard-tax-profile-date-btn p{
+    color: #6B6B6B;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+}
+.dashboard-tax-profile-date-btn-wrapper{
+    display: flex;
+    gap: 24px;
+}
+.dashboard-tax-profile-date-btn-one,
+.dashboard-tax-profile-date-btn-two{
+    padding: 8px 20px;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px;
+color: #08a838;
+border-radius: 8px;
+border: 0.5px solid  #09BD3F;
+}
+.dashboard-tax-profile-date-btn-two{
+background:#08a838;
+color: #E9E9E9;
+}
+
+.tax-profile-dashboard-btn-wrapper p{
+    color: var(--black);
+    font-family: Urbanist;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* responsive */
+@media only screen and (min-width: 1200px) and (max-width: 1685px) {
+    .upcoming-apointment-section .categories-tax-card-wrapper{
+        grid-template-columns: repeat(3,1fr);
+    }
+   
+}
+@media  (max-width: 700px) {
+    .tm-dashboard-banner-content-wrapper h1 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .tm-dashboard-banner-content-wrapper p {
+        font-size: 15px;
+        line-height: normal;
+    }
+    .start-searching-btn {
+        font-size: 14px;
+        padding: 10px 41px;
+        margin-top: 0px;
+    }
+    .tm-dashboard-home {
+        gap: 20px;
+    }
+    .tm-dashboard-heading {
+        font-size: 18px;
+        line-height: 37px;
+    }
+    .upcoming-apointments-user {
+        flex-direction: column;
+    }
+    .upcoming-apointments-user-link {
+        margin-right: 0px;
+        margin-top: 5px;
+    }
+
+    /* booking profile */
+    .dashboard-tax-profile-right-user {
+        gap: 10px;
+        align-items: center;
+    }
+    .upcoming-apointments-user-name-city {
+       align-items: center;
+    }
+    .dashboard-tax-profile-date-btn-text h4 {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 3px;
+    }
+    .tax-profile-dashboard-btn-wrapper p {
+        font-size: 17px;
+        margin-bottom: 10px;
+    }
+    .dashboard-tax-profile-date-btn-text h5 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .tax-profile-dashboard-btn-wrapper {
+        padding: 19px 35px;
+        margin-bottom: 30px;
+    }
+    .dashboard-tax-profile-date-btn {
+        padding: 30px;
+        border-radius: 16px;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+    .dashboard-tax-profile-date-btn p {
+        font-size: 15px;
+    }
+    .dashboard-tax-profile-date-btn-wrapper {
+        gap: 10px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .booking-back-btn {
+        font-size: 14px;
+    }
+    .dashboard-tax-profile-section .tax-profile-right {
+        gap: 30px;
+    }
+}

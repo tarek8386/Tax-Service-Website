@@ -1,0 +1,448 @@
+.dashboard-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(348px, 1fr));
+  column-gap: 24px;
+  row-gap: 24px;
+  margin-top: 40px;
+}
+.dashboard-summary .item {
+  border-radius: 10px;
+  border: 1px solid #e9e9e9;
+  background: #e6f2ea;
+  padding: 20px;
+  transition: var(--base-transition);
+}
+.dashboard-summary .item-logo {
+  border-radius: 50%;
+  background: linear-gradient(135deg, #09bd3f 0%, #09812d 100%);
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-summary .title {
+  color: #797979;
+  -webkit-text-stroke-width: 0.20000000298023224;
+  -webkit-text-stroke-color: #797979;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 10px 0;
+}
+.dashboard-summary .count {
+  color: #060606;
+  -webkit-text-stroke-width: 0.5;
+  -webkit-text-stroke-color: #060606;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  margin-bottom: 10px;
+}
+.dashboard-summary .text {
+  color: #060606;
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px; /* 120% */
+  letter-spacing: 0.2px;
+  width: 100%;
+  max-width: 180px;
+  display: flex;
+  gap: 4px;
+}
+.dashboard-summary .item:hover {
+  border-radius: 10px;
+  border: 1px solid #09bd3f;
+  background: #fff;
+  box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.1),
+    0px 10px 10px 0px rgba(0, 0, 0, 0.04);
+}
+
+/* appointments */
+.appointments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.appointments-container .left {
+  width: 100%;
+}
+.appointments-container .right {
+  width: 100%;
+}
+#calendar-title {
+  padding: 8px 16px;
+  border-bottom: 1px solid #e6f2ea;
+  background: #e6f2ea;
+  color: #1d1b20;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* profile setup steps */
+.profile-setup-steps {
+  border-radius: 8px;
+  border: 1px solid #bababa;
+  background: #fff;
+  padding: 24px;
+  padding-right: 48px;
+  width: 100%;
+  max-width: 884px;
+}
+.profile-setup-steps .title {
+  color: #111;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 54px */
+}
+
+.profile-setup-steps .text {
+  color: #67696f;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.profile-progress-bar {
+  height: 8px;
+  background: #e6f2ea;
+  width: 100%;
+  position: relative;
+}
+.progress-points {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 102%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.progress-complete {
+  background: linear-gradient(135deg, #09bd3f 0%, #09812d 100%);
+  height: 7px;
+  position: absolute;
+}
+
+.add-profile-photo-container {
+  padding: 24px;
+  border-radius: 6px;
+  border: 1px solid #e9e9e9;
+  background: #e6f2ea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-profile-photo-container .title-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #111;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+.add-profile-photo-container .title-bar h5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #09bd3f;
+}
+.add-profile-photo-container .title-text {
+  color: #67696f;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 440px;
+}
+
+.add-profile-photo-container .upload-photo-btn {
+  border-radius: 4px;
+  background: linear-gradient(135deg, #09bd3f 0%, #09812d 100%);
+  padding: 8px 20px;
+  color: #e9e9e9;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+}
+.add-photo-step-actions {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+}
+.add-photo-step-actions a {
+  border-radius: 4px;
+  background: linear-gradient(135deg, #09bd3f 0%, #09812d 100%);
+  padding: 8px 30px;
+  color: #e9e9e9;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  border: 1px solid #09bd3f;
+  cursor: pointer;
+}
+.add-photo-step-actions .skip-btn {
+  background: #fff;
+  color: #09bd3f;
+}
+.profile-setup-steps #step-item-2 {
+  display: none;
+}
+.profile-setup-steps #step-item-3 {
+  display: none;
+}
+
+/* appointment request page */
+.appointment-request .user-info-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.appointment-request .user-info-top .left {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.appointment-request .user-info-top .left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.appointment-request .user-info-top .active-status {
+  position: absolute;
+  bottom: -2px;
+  right: 2px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+.appointment-request .user-info-top .active {
+  background-color: #27ae60;
+}
+.appointment-request .user-info-top .inactive {
+  background-color: #bababa;
+}
+.appointment-request .user-info-top .right {
+  color: #252c32;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+}
+.appointment-request .user-info-bottom {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.appointment-request .user-info-bottom .info {
+  color: #222;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+.appointment-request .user-info-bottom .info span {
+  color: #09812d;
+}
+.appointment-request .user-info-bottom .info-title {
+  color: #222;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+.appointment-request .user-info-bottom .info-text {
+  color: #6b6b6b;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+
+.appointment-request .user-document-title {
+  margin-top: 40px;
+  color: #222;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+
+.appointment-request .user-document-info {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  border-radius: 16px;
+  background: #e6f2ea;
+  width: 100%;
+  max-width: 400px;
+  padding: 16px;
+}
+.appointment-request .user-document-info .info-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.appointment-request .user-document-info .info-content .title {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 16.8px */
+  color: #09bd3f;
+}
+.appointment-request .user-document-info .info-content .text {
+  color: #838e9c;
+  font-family: Urbanist;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 4px;
+}
+.appointment-request .user-document-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.appointment-request .info-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.appointment-request .info-actions .box {
+  border-radius: 10px;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.appointment-request .write-message {
+  padding: 16px;
+  border-right: 1px solid #e8ebf2;
+  border-bottom: 1px solid #e8ebf2;
+  border-left: 1px solid #e8ebf2;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  gap: 8px;
+}
+.appointment-request .write-message textarea {
+  width: 100%;
+  height: 80px;
+  border: none;
+  outline: none;
+}
+.appointment-request .send-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.appointment-request .send-btn-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #09bd3f 0%, #09812d 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 420px) {
+  .appointments-container .left {
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .appointment-request .user-info-top .active-status {
+    width: 17px;
+    height: 17px;
+  }
+  .appointment-request .user-info-top .left {
+    width: 54px;
+    height: 54px;
+  }
+  .appointment-request .user-info-bottom .info-text {
+    color: #6b6b6b;
+    font-family: Poppins;
+    font-size: 18px;
+  }
+  .appointment-request .user-info-bottom .info-title {
+    color: #222;
+    font-family: Poppins;
+    font-size: 20px;
+  }
+  .appointment-request .user-info-bottom .info {
+    color: #222;
+    font-family: Poppins;
+    font-size: 20px;
+  }
+  .appointment-request .user-info-top .right {
+    color: #252c32;
+    font-family: Poppins;
+    font-size: 24px;
+  }
+  #calendar-title {
+    padding: 16px 24px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .appointments-container {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .appointments-container .left {
+    width: 30%;
+  }
+  .appointments-container .right {
+    width: 70%;
+  }
+}
